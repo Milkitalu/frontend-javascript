@@ -60,3 +60,43 @@ interface printTeacherFunction {
 
 const printT: printTeacherFunction = printTeacher;
 console.log(printT("John", "Doe")); 
+
+
+//Writing Class tasks
+
+interface StudentConstructor {
+    new(firstName: string, lastName: string):StudentClass;
+
+}
+
+interface StudentClass{
+    workOnHomework(): string;
+    displayName(): string;
+}
+
+// Implement StudentClass
+
+class Student implements StudentClass{
+    firstName:string;
+    lastName: string;
+    constructor(firstName: string, lastName: string){
+        this.firstName = firstName;
+        this.lastName = lastName;
+    }
+
+    workOnHomework(): string {
+        return "Currently working";
+    }
+
+    displayName(): string {
+        return this.firstName;
+    }
+}
+
+//Class usage Example
+
+const student = new Student("John","Doe");
+console.log(student.workOnHomework());
+console.log(student.displayName());
+
+

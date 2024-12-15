@@ -48,10 +48,3 @@ studentsList.forEach(student =>{
 table.appendChild(tbody);
 document.body.appendChild(table);
 
-
-
-
-
-
-//Writing Class tasks
-
