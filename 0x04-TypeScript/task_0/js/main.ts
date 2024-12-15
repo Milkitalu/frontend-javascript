@@ -81,7 +81,7 @@ interface Directors extends Teacher {
   }
   
   // Creating a Directors object.
-  
+
 const director: Directors = {
     firstName: "Jane",
     lastName: "Smith",
@@ -90,5 +90,24 @@ const director: Directors = {
     numberOfReports: 5,
     contract: true // Additional attribute
   };
-  
 
+  // Function that 
+
+  function printTeacher(firstName:string, lastName:string):string {
+    return`${firstName.charAt(0)}.${lastName}`;
+
+  }
+  
+//usage Examples..
+console.log(printTeacher("Jhon", "Doe"));
+
+//Create an interface for the function
+
+interface printTeacherFunction {
+    (firstName:string, lastName:string): string;
+}
+
+// usage Example 
+
+const printT: printTeacherFunction = printTeacher;
+console.log(printT("John", "Doe")); 
