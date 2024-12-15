@@ -52,26 +52,6 @@ document.body.appendChild(table);
 
 
 
-  // Function that 
-
-  function printTeacher(firstName:string, lastName:string):string {
-    return`${firstName.charAt(0)}.${lastName}`;
-
-  }
-  
-//usage Examples..
-console.log(printTeacher("Jhon", "Doe"));
-
-//Create an interface for the function
-
-interface printTeacherFunction {
-    (firstName:string, lastName:string): string;
-}
-
-// usage Example 
-
-const printT: printTeacherFunction = printTeacher;
-console.log(printT("John", "Doe")); 
 
 //Writing Class tasks
 
