@@ -73,3 +73,22 @@ const teacher3: Teacher = {
 
 console.log(teacher3);
 
+
+// An interface for directors that extends teachers functionality
+
+interface Directors extends Teacher {
+    numberOfReports: number;
+  }
+  
+  // Creating a Directors object.
+  
+const director: Directors = {
+    firstName: "Jane",
+    lastName: "Smith",
+    fullTimeEmployee: true,
+    location: "Los Angeles",
+    numberOfReports: 5,
+    contract: true // Additional attribute
+  };
+  
+
